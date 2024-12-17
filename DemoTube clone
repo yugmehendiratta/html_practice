@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> DemoTube</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: hsl(214, 22%, 75%);
+        }
+        header {
+            background-color: #b74343;
+            color: rgb(243, 88, 88);
+            padding: 10px;
+            display: flex;
+            align-items: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        .search-bar {
+            flex-grow: 1;
+            margin: 0 20px;
+        }
+        .search-bar input {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 2px;
+        }
+        .sidebar {
+            width: 200px;
+            background-color: #7e7d9f;
+            padding: 10px;
+            position: fixed;
+            top: 60px;
+            bottom: 0;
+            border-right: 1px solid #331e1e;
+        }
+        .sidebar a {
+            display: block;
+            padding: 10px;
+            color: #211f1f;
+            text-decoration: none;
+        }
+        .sidebar a:hover {
+            background-color: #f0f0f0;
+        }
+        .content {
+            margin-left: 220px;
+            padding: 20px;
+        }
+        .video {
+            background-color: white;
+            margin-bottom: 20px;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .video img {
+            width: 100%;
+            border-radius: 5px;
+        }
+        .video-title {
+            font-size: 16px;
+            margin: 10px 0 5px;
+        }
+        .video-channel {
+            color: #606060;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>DemoTube Clone</h1>
+    <div class="search-bar">
+        <input type="text" placeholder="Search...">
+    </div>
+</header>
+
+<div class="sidebar">
+    <a href="#"><i class="fas fa-home"></i> Home</a>
+    <a href="#"><i class="fas fa-video"></i> Trending</a>
+    <a href="#"><i class="fas fa-thumbs-up"></i> Subscriptions</a>
+    <a href="#"><i class="fas fa-history"></i> History</a>
+    <a href="#"><i class="fas fa-play-circle"></i> Your Videos</a>
+</div>
+
+<div class="content">
+    <div class="video">
+        <img src="https://yt3.googleusercontent.com/dwLv5W8cnpHt55qnrtQionHvXryhqvCuOmFC2WK2q42papb4jQ8iHKvhOgZIOoPvJaRALpkcsw=s160-c-k-c0x00ffffff-no-rj" alt="Video Thumbnail">
+        <div class="video-title">Aditya Thakurr Vlogs</div>
+        <div class="video-channel"> Aditya Thakur </div>
+    </div>
+    <div class="video">
+        <img src="https://yt3.googleusercontent.com/ytc/AIdro_nGWnCX1SjSnapRzWjpOQCG-k_v-aSZtYfjFhJzjxqSbKA=s160-c-k-c0x00ffffff-no-rj" alt="Video Thumbnail">
+        <div class="video-title"> Samay Raina</div>
+        <div class="video-channel"> Samay Raina</div>
+    </div>
+    <div class="video">
+        <img src="https://yt3.googleusercontent.com/ytc/AIdro_lo0CYoi5DxN54LeCV1G5F11AxX8WXWVm95oYJ7IQ4T1eo=s176-c-k-c0x00ffffff-no-rj-mo" alt="Video Thumbnail">
+        <div class="video-title"> Elvish Yadav Vlogs</div>
+        <div class="video-channel"> Elvish Yadav</div>
+    </div>
+    <!-- Add more video blocks as needed -->
+</div>
+
+</body>
+</html>
